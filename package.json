@@ -1,0 +1,32 @@
+{
+  "name": "jjh",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+
+  "build": {
+    "appId": "com.gm.app",
+    "productName":"多开助手",
+    "mac": {
+      "target": ["zip"],
+      "icon": "./img/mac.icns"
+    },
+    "win": {
+      "target": ["nsis", "zip"],
+      "icon": "./img/win.ico"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win --x64",
+    "dist:mac": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "^5.0.1",
+    "electron-builder": "^20.40.2"
+  }
+}
